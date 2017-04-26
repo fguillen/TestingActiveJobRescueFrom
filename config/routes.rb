@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "raise_exception", to: "my_tests#raise_exception", as: "raise_exception"
+  get "raise_standard_error", to: "my_tests#raise_standard_error", as: "raise_standard_error"
 end
